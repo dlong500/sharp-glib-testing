@@ -1,0 +1,57 @@
+{
+  "name": "sharp-glib-testing",
+  "version": "1.0.0",
+  "description": "Image processing for testing glib",
+  "private": true,
+  "main": "entry.js",
+  "repository": "git@github.com:dlong500/sharp-glib-testing.git",
+  "author": "Davison Long <dlong500@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "start": "better-npm-run start-imager-dev",
+    "imager": "better-npm-run start-imager-prod",
+    "build-app": "yarn run clean && babel src --out-dir ./dist"
+  },
+  "betterScripts": {
+    "start-imager-dev": {
+      "command": "node entry.js",
+      "env": {
+        "NODE_ENV": "development",
+        "NODE_DEBUG": "sharp"
+      }
+    },
+    "start-imager-prod": {
+      "command": "node entry.js",
+      "env": {
+        "NODE_ENV": "production",
+        "NODE_DEBUG": "sharp"
+      }
+    }
+  },
+  "bin": {
+    "imager": "entry.js"
+  },
+  "dependencies": {
+    "better-npm-run": "^0.1.0",
+    "bluebird": "^3.5.0",
+    "cross-env": "^5.0.5",
+    "del": "^3.0.0",
+    "fs-extra": "^7.0.0",
+    "sharp": "^0.20.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^8.0.0",
+    "babel-plugin-transform-async-generator-functions": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^5.0.1",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}

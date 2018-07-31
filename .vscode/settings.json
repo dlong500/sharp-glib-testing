@@ -1,0 +1,21 @@
+// VS Code editor settings
+// Place your settings in this file to overwrite default and user settings.
+{
+	"files.eol": "\n",
+	"files.trimTrailingWhitespace": true,
+	"explorer.openEditors.visible": 25,
+	"editor.acceptSuggestionOnEnter": false,
+	"editor.renderIndentGuides": true,
+	"files.exclude": {
+		"**/.git": true,
+		"**/.DS_Store": true,
+    "**/node_modules": true
+	},
+	"search.exclude": {
+		"**/node_modules": true,
+	},
+  "eslint.enable": true,
+	"eslint.run": "onType",
+  "javascript.validate.enable": false,
+  "vsicons.presets.angular": false,
+}
