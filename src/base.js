@@ -3,6 +3,9 @@ import sharp from 'sharp'
 import { downsizeImages, generateDeepZoomData } from './lib/imaging'
 import { command } from './lib/constants'
 
+// Output sharp version info
+console.log('sharp.versions:', sharp.versions)
+
 // Run the app
 app()
 
