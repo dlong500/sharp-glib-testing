@@ -18,14 +18,16 @@
       "command": "node entry.js",
       "env": {
         "NODE_ENV": "development",
-        "NODE_DEBUG": "sharp"
+        "NODE_DEBUG": "sharp",
+        "VIPS_INFO": "true"
       }
     },
     "start-imager-prod": {
       "command": "node entry.js",
       "env": {
         "NODE_ENV": "production",
-        "NODE_DEBUG": "sharp"
+        "NODE_DEBUG": "sharp",
+        "VIPS_INFO": "true"
       }
     }
   },
